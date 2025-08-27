@@ -25,9 +25,11 @@ This project is a front-end assessment where I built a responsive product card U
 - Flexbox and Grid handle layout across breakpoints, so cards stack on small screens and line up nicely on larger ones.  
 - JavaScript dynamically generates the product cards and updates the cart counter when items are added.  
 - Accessibility was a focus, with `aria-live` for cart updates, focus states for buttons, and colour contrast verified for readability.  
+- Normally I would use SCSS partials to structure styles, but for this small project I kept everything in a single file. 
+- The styling was kept subtle and neutral to complement the stock photo images.
 
 ## How to Run
-1. **Clone the repo:** `git clone <repo url>`  
+1. **Clone the repo:** `git clone https://github.com/Marie-L1/GoodMorning-Skills-Assessment.git`  
 2. **Compile SASS:** `sass styles.scss styles.css --watch`  
 3. Open `index.html` in a browser  
 4. Click "Add to Cart" to see the counter update
