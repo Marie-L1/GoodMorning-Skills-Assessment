@@ -1,0 +1,123 @@
+html, body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  margin: 0;
+  border-bottom: 1px solid #cbc0c0;
+  background-color: #faf9fb;
+}
+.header__title {
+  font-weight: bold;
+  color: #4e8ed2;
+  font-size: 1.45rem;
+  margin: 0.5rem 0;
+}
+.header__cart-count {
+  font-size: 1.2rem;
+  color: #3F74AB;
+}
+
+.product-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 0.3125rem;
+  border: 0.5px solid #cbc0c0;
+  background-color: #faf9fb;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  height: 28.125rem;
+  width: 21.875rem;
+}
+.product-card:hover {
+  border: 0.5px solid #7b7c88;
+  background-color: #F7F6F9;
+}
+.product-card__image {
+  height: 60%;
+  width: 90%;
+  object-fit: cover;
+  border-radius: 0.3125rem;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.product-card__title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-align: center;
+}
+.product-card__description {
+  text-align: center;
+  font-size: 0.75rem;
+}
+.product-card__price {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.add-to-cart {
+  margin-top: auto;
+  padding: 1rem 1.5rem;
+  background-color: #4e8ed2;
+  color: #ffffff;
+  border: 0.5px solid #3F74AB;
+  cursor: pointer;
+  border-radius: 0.3125rem;
+}
+.add-to-cart:hover {
+  background-color: #3F74AB;
+}
+.add-to-cart:focus {
+  outline: 2px solid #3F74AB;
+  outline-offset: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    padding: 3rem;
+  }
+  .header__title {
+    margin: 0;
+    font-size: 2.25rem;
+  }
+  .header__cart-count {
+    font-size: 1.75rem;
+  }
+  .product-card-container {
+    justify-content: flex-start;
+    margin-left: 1.875rem;
+  }
+  .product-card {
+    padding: 2.5rem 0;
+    max-width: 31.25rem;
+    width: 40.625rem;
+    height: 40.625rem;
+  }
+  .product-card__description {
+    font-size: 1rem;
+  }
+  .product-card__image {
+    width: 80%;
+    height: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
